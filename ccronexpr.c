@@ -1,3 +1,5 @@
+#define CRON_USE_LOCAL_TIME
+
 /*
  * Copyright 2015, alex at staticlibs.net
  *

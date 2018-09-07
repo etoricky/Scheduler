@@ -22,11 +22,12 @@ public:
 	void Function() {
 		auto t = std::time(nullptr);
 		auto tm = *std::localtime(&t);
-		std::cout << std::put_time(&tm, "%Y-%m-%d %H:%M:%S") << std::endl;
+		std::cout << "Function() at " << std::put_time(&tm, "%Y-%m-%d %H:%M:%S") << std::endl;
 	}
 };
 
 int main(int argc, char* argv[]) {
+	"0 0 3 ? * SAT";
 	std::cout << argv[1] << std::endl;
 	auto client = new(std::nothrow) Client();
 	client->SetScheduler(argv[1]);
